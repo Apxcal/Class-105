@@ -1,0 +1,42 @@
+<html>
+    <head>
+        <title>Face Recognition App</title>
+        <script src="main.js"></script>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>   
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/webcamjs/1.0.26/webcam.js"></script>    
+    </head>
+    <body class="body">
+        <center>
+            <h2>Face recognition App</h2>
+            <p>The model is trained to recognize these people:</p>
+        <div id="peoplediv">
+            <b class="people">
+            Mom
+            <hr>
+            Sister
+            <hr>
+        </b>
+        </div>
+        <label><b>Webcam - </b></label>
+        <div id="webcam"></div>
+        <br>
+        <br>
+        <div id="snapshot"></div>
+        <br>
+        <button onclick="snapshot()" id="snapshot" class="btn btn-primary">Snapshot</button>
+        <br>
+        <br>
+        <button onclick="identify()" id="identify" class="btn btn-success">Identify</button>
+        <br>
+        <br>
+        <div class="resultsdiv"></div>
+        <h5 id="person">Person - </h5>
+        <h6 id="accuracy">Accuracy - </h6>
+        </center>
+    </body>
+</html>
